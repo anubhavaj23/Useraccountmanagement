@@ -29,6 +29,7 @@
 <!--Form without header-->
 <div class="card">
     <div class="card-block">
+        <form id="loginform" action="servlet/Login" method="post">
 
         <!--Header-->
         <div class="text-xs-center">
@@ -39,27 +40,28 @@
         <!--Body-->
         <div class="md-form">
             <i class="fa fa-envelope prefix"></i>
-            <input type="text" id="email" class="form-control">
+            <input type="text" id="form2" class="form-control" name="username">
+
             <label for="form2">Your email</label>
         </div>
 
         <div class="md-form">
             <i class="fa fa-lock prefix"></i>
-            <input type="password" id="pass" class="form-control">
+
+            <input type="password" id="form4" class="form-control" name="pass">
             <label for="form4">Your password</label>
         </div>
 
         <div class="text-xs-center">
-            <button class="btn btn-success">Login</button>
+            <button class="btn btn-success" type="submit" onclick="document.getElementById('loginform').submit()">Login</button>
         </div>
-
+        </form>
     </div>
 
     <!--Footer-->
     <div class="modal-footer">
         <div class="options">
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
+            <p>Not a member? <a href="register.html">Sign Up</a></p>
         </div>
     </div>
 
