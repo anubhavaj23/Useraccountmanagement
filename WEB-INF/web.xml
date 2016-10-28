@@ -26,6 +26,37 @@
 	<url-pattern>/servlet/Login</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>changedetail</servlet-name>
+	<servlet-class>dbms.changedetail</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>changedetail</servlet-name>
+	<url-pattern>/servlet/changedetail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>changedetailconfirm</servlet-name>
+	<servlet-class>dbms.changedetailconfirm</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>changedetailconfirm</servlet-name>
+	<url-pattern>/servlet/changedetailconfirm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>signout</servlet-name>
+	<servlet-class>dbms.signout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>signout</servlet-name>
+	<url-pattern>/servlet/signout</url-pattern>
+</servlet-mapping>
+
+
 
 
 </web-app>

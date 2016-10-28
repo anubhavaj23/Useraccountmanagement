@@ -11,7 +11,7 @@ public class Register extends HttpServlet{
 	public void doPost(HttpServletRequest req,HttpServletResponse res)throws IOException{
 		PrintWriter pw = res.getWriter();
 		
-		String s1 = req.getParameter("name");
+		String s1 = req.getParameter("fname").trim() + " " + req.getParameter("lname").trim();
 		String s2 = req.getParameter("email");
 		String s3 = req.getParameter("pass");
 

@@ -1,0 +1,55 @@
+body{
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 0px;	
+	width: 1350px;
+	overflow-x: hidden;
+}
+.frame{
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-left: 0px;
+	
+	background-image: url('../images/asanoha.png');
+	width: 1340px;
+	height: 900px;
+	position: absolute;
+}
+
+.idsignout{	
+	position: absolute;
+	margin-left: 1036px;
+	padding-right: 10px;
+	padding-top: 0px;
+	font-size: 15px;
+	float: right;
+}
+
+#ratimg{
+	margin-left: 20px;
+	margin-top: 20px;
+	position: absolute;
+	width: 117px; 
+	height: 57px;
+}
+
+
+#labels{
+	float: left;
+	margin-top: -15px;
+	line-height: 23px;
+}
+
+#inputbox{
+	float: left;
+	margin-left: 50px;
+
+
+}
+
+#container{
+	margin-left: 35%;
+	width: 100%;
+	margin-top: 200px;
+}

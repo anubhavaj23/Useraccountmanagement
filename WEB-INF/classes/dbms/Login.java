@@ -23,18 +23,15 @@ public class Login extends HttpServlet{
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				flag = 1;
+				HttpSession session = req.getSession();
+				session.setAttribute("emailid",s1);
 				break;
 			}
 		}
 		catch(Exception e){ e.printStackTrace();}
 		
 		if(flag==1){
-			pw.println("<html>");
-			pw.println("<body>");				
-			pw.println("<script>");
-			pw.println("alert('Login successful')");
-			pw.println("</script>");
-			pw.println("</body></html>");
+			res.sendRedirect("changedetail");
 		}
 		else
 			res.sendRedirect("../login.html");	
